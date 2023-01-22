@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travellian</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/script.js"></script>
   </head>
   <body>
@@ -32,7 +34,7 @@
         </div>
       </header>
       <main class="section">
-        <section class="section-travellian">
+        <section class="section-travellian travellian">
           <div class="travellian__container">
             <div class="travellian__content">
               <h1 class="travellian__title">Start your unforgettable journey with us.</h1>
@@ -69,7 +71,87 @@
             </form>
           </div>
         </section>
-        <section class="section-"></section>
+        <section class="section-destination destination">
+          <div class="destination__container">
+            <div class="destination__title title">
+              <div class="title__name">Popular Destinations</div>
+              <div class="title__decription">
+                Most popular destinations around the world, from historical places to natural wonders.
+              </div>
+            </div>
+            <div class="destination-swiper__buttons">
+              <div class="destination-swiper__button swiper-button-prev">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+              <div class="destination-swiper__button swiper-button-next">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+            </div>
+            <!-- Slider main container -->
+            <div class="destination-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="destination-swiper__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Monument of Berlin</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span> Berlin, Germany</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-1.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Millennium Bridge</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span>London, United Kingdom</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-2.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Rialto Bridge</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span>Venice, Italy</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-3.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Sea of Orange Ti</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span>Lisbon, Portugal</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-4.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="section-"></section>
         <section class="section-"></section>
       </main>
