@@ -14,7 +14,7 @@ listMenu.forEach((item) => {
   })
 })
 
-const swiper = new Swiper(".destination-swiper", {
+const swiperPopular = new Swiper(".destination-swiper", {
   direction: "horizontal",
   loop: true,
   spaceBetween: 32,
@@ -30,5 +30,24 @@ const swiper = new Swiper(".destination-swiper", {
     768: { slidesPerView: 2.2 },
     1152: { slidesPerView: 2.8 },
     1420: { slidesPerView: 3.4 },
+  },
+})
+
+const swiperOffer = new Swiper(".offer-swiper", {
+  direction: "horizontal",
+  loop: true,
+  spaceBetween: 32,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".offer-swiper__button.swiper-button-next",
+    prevEl: ".offer-swiper__button.swiper-button-prev",
+  },
+
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1152: { slidesPerView: 2 },
+    1420: { slidesPerView: 3 },
   },
 })

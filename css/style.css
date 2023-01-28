@@ -578,6 +578,10 @@ body {
   width: 70%;
 }
 
+/* .destination__name::before {
+  left: 0;
+} */
+
 .destination-swiper {
   position: relative;
   height: 41.25rem;
@@ -706,4 +710,72 @@ body {
     order: 3;
     margin: auto;
   }
+}
+
+/* =========================== */
+/* === Section Offer ========= */
+/* =========================== */
+
+.section-offer {
+}
+
+.offer__container {
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+  display: grid;
+  row-gap: 6.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.offer__title {
+  justify-self: end;
+  text-align: right;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.offer__name::before {
+  width: 55%;
+  left: initial;
+  right: 0;
+}
+
+.offer-swiper__buttons {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  gap: 2.5rem;
+  align-self: flex-end;
+}
+.offer-swiper__button {
+}
+.offer-swiper {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  max-width: 100%;
+}
+.offer-swiper__wrapper {
+}
+.offer-swiper__slide {
+}
+.offer-card {
+}
+
+.card-offer {
+}
+.card-offer__image {
+}
+.card-offer__body {
+}
+.card-offer__title {
+}
+.card-offer__rating {
+}
+.card-offer__description {
+}
+.card-offer__footer {
+}
+.card-offer__price {
+}
+.card-offer__btn {
 }
