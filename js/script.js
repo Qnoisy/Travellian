@@ -47,7 +47,6 @@ const swiperOffer = new Swiper(".offer-swiper", {
   breakpoints: {
     320: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
-    1152: { slidesPerView: 2 },
-    1420: { slidesPerView: 3 },
+    1152: { slidesPerView: 3 },
   },
 })
