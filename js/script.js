@@ -50,3 +50,18 @@ const swiperOffer = new Swiper(".offer-swiper", {
     1152: { slidesPerView: 3 },
   },
 })
+
+const swiperGallery = new Swiper(".gallery-swiper", {
+  loop: true,
+  spaceBetween: 32,
+  slidesPerView: 4,
+  direction: "vertical",
+  // Navigation arrows
+  navigation: {
+    nextEl: ".gallery-swiper__button.swiper-button-next",
+    prevEl: ".gallery-swiper__button.swiper-button-prev",
+  },
+  breakpoints: {
+       768: { direction: "horizontal" },
+  },
+})
