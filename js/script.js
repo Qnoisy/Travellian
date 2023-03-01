@@ -62,6 +62,24 @@ const swiperGallery = new Swiper(".gallery-swiper", {
     prevEl: ".gallery-swiper__button.swiper-button-prev",
   },
   breakpoints: {
-       768: { direction: "horizontal" },
+    768: { direction: "horizontal" },
+  },
+})
+
+const swiperExperiences = new Swiper(".experiences-swiper", {
+  direction: "horizontal",
+  loop: true,
+  spaceBetween: 32,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".experiences-swiper__button.swiper-button-next",
+    prevEl: ".experiences-swiper__button.swiper-button-prev",
+  },
+
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    768: { slidesPerView: 1.5 },
+    1152: { slidesPerView: 2.5 },
   },
 })
