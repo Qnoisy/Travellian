@@ -27,6 +27,7 @@
   --clr-orange-light: #fff8f1;
   --clr-orange: #ff7757;
   --clr-orange-hover: #df664b;
+  --clr-orange-bg: #ffe8d4;
   --clr-yellow: #ffc107;
 }
 
@@ -1308,4 +1309,111 @@ body {
   .experiences-swiper__buttons {
     justify-self: center;
   }
+}
+
+/* == Footer ============================ */
+.footer {
+}
+.footer__subcribe {
+}
+.footer__body {
+}
+
+.subcribe {
+  transform: translateY(50%);
+}
+.subcribe__container {
+  padding: 0;
+}
+.subcribe__body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 78.875rem;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 3.75rem 5rem;
+  background: var(--clr-white);
+  box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.625rem;
+}
+.subcribe__title {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  font-size: 4rem;
+  line-height: 1.32; /* 85px/64 */
+  color: var(--clr-grey);
+}
+.subcribe__form {
+  display: flex;
+  gap: 2rem;
+}
+.subcribe__input-group {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.subcribe__input-group label {
+  font-weight: var(--fw-regular);
+  font-size: 20px;
+  line-height: 1.2; /* 24px/20 */
+  color: var(--clr-grey);
+}
+
+.subcribe__input-group input {
+  outline: none;
+  border: none;
+  background-color: var(--clr-orange-bg);
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.75rem;
+}
+
+.subcribe__input-group input::placeholder {
+  color: var(--clr-orange);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2; /* 24px/20 */
+}
+
+.subcribe__btn {
+  border: none;
+  font-weight: var(--fw-regular);
+  font-size: 1.25rem;
+  line-height: 1.2; /* 24px/20 */
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  padding: 1.5rem 2.15rem;
+  border-radius: 0.75rem;
+  align-self: flex-end;
+}
+
+.body-footer {
+  padding-top: 15rem;
+  padding-bottom: 8.75rem;
+  background-color: var(--clr-blue-dark);
+}
+.body-footer__container {
+  padding: 0;
+}
+.body-footer__logo {
+}
+.body-footer__copyright {
+}
+.body-footer__menu {
+}
+.body-footer__title {
+}
+.body-footer__list {
+}
+.body-footer__item {
+}
+.body-footer__link {
+}
+.body-footer__information {
+}
+.body-footer__contact {
+}
+.body-footer__follow {
+}
+.body-footer__social {
 }
