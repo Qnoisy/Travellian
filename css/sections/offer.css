@@ -1,5 +1,4 @@
-.section-offer {
-}
+.section-offer {}
 
 .offer__container {
   display: grid;
@@ -7,6 +6,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
 }
+
 .offer__title {
   justify-self: end;
   text-align: right;
@@ -27,24 +27,26 @@
   gap: 2rem;
   align-self: flex-end;
 }
-.offer-swiper__button {
-}
+
+.offer-swiper__button {}
+
 .offer-swiper {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   max-width: 100%;
 }
-.offer-swiper__wrapper {
-}
-.offer-swiper__slide {
-}
-.offer-card {
-}
+
+.offer-swiper__wrapper {}
+
+.offer-swiper__slide {}
+
+.offer-card {}
 
 .card-offer {
   border-radius: 1.625rem;
   overflow: hidden;
 }
+
 .card-offer__image {
   height: 17.875rem;
 }
@@ -59,14 +61,17 @@
   background-color: var(--clr-orange-light);
   padding: 2.5rem 1.25rem;
 }
+
 .card-offer__title {
   font-family: var(--ff-third);
   font-weight: var(--fw-regular);
   font-size: 1.75rem;
-  line-height: 1.25; /* 35/28 */
+  line-height: 1.25;
+  /* 35/28 */
   color: var(--clr-grey);
   margin-bottom: 0.5rem;
 }
+
 .card-offer__rating {
   margin-bottom: 1.5rem;
 }
@@ -78,8 +83,10 @@
 
 .card-offer__description {
   margin-bottom: 1.5rem;
-  line-height: 1.16; /* 21/18 */
+  line-height: 1.16;
+  /* 21/18 */
 }
+
 .card-offer__footer {
   display: flex;
   flex-wrap: wrap;
@@ -87,18 +94,21 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .card-offer__price {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   line-height: 1.18;
+  margin-right: 0.5rem;
 }
 
-.card-offer__price > span:first-child {
+.card-offer__price>span:first-child {
   font-size: 1.25rem;
   color: var(--clr-grey);
 }
-.card-offer__price > span:last-child {
+
+.card-offer__price>span:last-child {
   font-size: clamp(2rem, 0rem + 2.7778vw, 2.5rem);
   color: var(--clr-orange);
 }
@@ -110,7 +120,8 @@
   color: var(--clr-white);
   background-color: var(--clr-orange);
   font-size: 1.25rem;
-  line-height: 1.2; /* 24/20 */
+  line-height: 1.2;
+  /* 24/20 */
   border-radius: 0.75rem;
   text-transform: uppercase;
   transition: 0.4s;
@@ -131,10 +142,12 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
+
   .offer-swiper {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
+
   .offer-swiper__buttons {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
