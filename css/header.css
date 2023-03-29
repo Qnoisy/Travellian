@@ -5,6 +5,7 @@
   color: var(--clr-white);
   font-size: 1.25rem;
 }
+
 .header__container {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -14,16 +15,23 @@
 }
 
 .header__logo {
+  transform: scale(0);
+  transition: all 0.8s ease 0s;
+}
+
+.header__logo.-active {
+  transform: scale(1);
 }
 
 .header__logo img {
   height: 2.875rem;
   width: 14.625rem;
 }
-.header__menu {
-}
-.header__buttons {
-}
+
+.header__menu {}
+
+.header__buttons {}
+
 .header__button-outline {
   cursor: pointer;
   color: var(--clr-white);
@@ -68,6 +76,7 @@
   .header__logo {
     margin-left: 16px;
   }
+
   .header__logo img {
     height: 1.75rem;
     width: 8.75rem;
@@ -76,12 +85,12 @@
 
 /* ================================== */
 
-.menu {
-}
-.menu__icon {
-}
-.menu__body {
-}
+.menu {}
+
+.menu__icon {}
+
+.menu__body {}
+
 .menu__list {
   min-height: 100%;
   display: flex;
@@ -96,7 +105,8 @@
 .menu__link {
   color: var(--clr-white);
   font-weight: var(--fw-regular);
-  line-height: 120%; /* 24/20 */
+  line-height: 120%;
+  /* 24/20 */
   transition: 0.4s;
 }
 
@@ -129,6 +139,7 @@
     background-color: transparent;
     border: none;
   }
+
   .icon-menu span {
     background-color: var(--clr-white);
     position: absolute;
@@ -137,6 +148,7 @@
     height: 2px;
     top: 10px;
   }
+
   .icon-menu:before,
   .icon-menu:after {
     content: "";
@@ -147,9 +159,11 @@
     left: 0;
     transition: all 0.3s ease 0s;
   }
+
   .icon-menu:before {
     top: 0;
   }
+
   .icon-menu:after {
     bottom: 0;
   }
@@ -162,12 +176,13 @@
     transform: rotate(45deg);
     top: 0.6075em;
   }
+
   .icon-menu.active:after {
     transform: rotate(-45deg);
     bottom: 0.6075rem;
   }
 
-  .icon-menu.active ~ .menu__body {
+  .icon-menu.active~.menu__body {
     display: grid;
     place-content: center;
     position: fixed;
@@ -175,23 +190,25 @@
     background-color: #050604ea;
   }
 
-  .icon-menu.active ~ .menu__body .menu__list {
+  .icon-menu.active~.menu__body .menu__list {
     width: 80vw;
     flex-direction: column;
   }
-  .icon-menu.active ~ .menu__body .menu__list li {
+
+  .icon-menu.active~.menu__body .menu__list li {
     font-size: 2rem;
     text-align: center;
   }
-  .icon-menu.active ~ .menu__body .menu__list li a {
+
+  .icon-menu.active~.menu__body .menu__list li a {
     color: var(--clr-white);
     display: inline-block;
     padding: 2rem 4rem;
   }
 }
 
-@media (max-width: 767.98px) {
-}
+@media (max-width: 767.98px) {}
+
 .icon-menu {
   margin: 0.875rem 1rem;
 }

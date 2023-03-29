@@ -1,9 +1,10 @@
-.section {
-}
+.section {}
+
 .section-travellian {
   position: relative;
   background: url("../../img/hero-section.png") center / cover no-repeat;
 }
+
 .travellian__container {
   padding-top: 16.875rem;
   padding-bottom: 16.875rem;
@@ -19,14 +20,37 @@
   font-family: var(--ff-secondary);
   color: var(--clr-white);
   font-weight: var(--fw-regular);
-  line-height: 133.333333%; /* 112/84 */
+  line-height: 133.333333%;
+  /* 112/84 */
   margin-bottom: 1rem;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
+
+.travellian__title.-active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .travellian__text {
   font-size: 1.5rem;
-  line-height: 116.666667%; /* 28/24 */
+  line-height: 116.666667%;
+  /* 28/24 */
   color: var(--clr-white);
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
+
+.travellian__text.-active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
 .travellian__inputs {
   border-radius: 0px 20px 20px 0px;
   position: relative;
@@ -38,6 +62,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .travellian__inputs::after {
   content: "";
   position: absolute;
@@ -47,8 +72,9 @@
   width: 400px;
   height: 100%;
 }
-.input {
-}
+
+.input {}
+
 .input__group {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
@@ -65,7 +91,8 @@
 .input__item label {
   font-size: 1rem;
   font-weight: var(--fw-regular);
-  line-height: 118.75%; /* 19/16 */
+  line-height: 118.75%;
+  /* 19/16 */
   color: var(--clr-grey);
   text-transform: uppercase;
 }
@@ -101,7 +128,8 @@
   text-align: left;
   font-size: 2.25rem;
   font-weight: var(--fw-regular);
-  line-height: 133.333333%; /* 48/36 */
+  line-height: 133.333333%;
+  /* 48/36 */
   padding: 2.5rem 1.25rem;
 
   background-color: var(--clr-orange);
@@ -118,13 +146,16 @@
   .travellian__content {
     margin-bottom: 8.75rem;
   }
+
   .travellian__container {
     padding-top: 12.5rem;
     padding-bottom: 9.375rem;
   }
+
   .travellian__title {
     font-size: 4rem;
   }
+
   .travellian__inputs {
     width: 90%;
   }
@@ -134,12 +165,15 @@
   .travellian__content {
     margin-bottom: 6.25rem;
   }
+
   .travellian__title {
     font-size: 3.375rem;
   }
+
   .travellian__text {
     font-size: 1.25rem;
   }
+
   .input__group {
     flex: 1;
     display: grid;
@@ -147,6 +181,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 2.5rem;
   }
+
   .input__btn {
     padding: 3.75rem 1.25rem;
   }
@@ -156,16 +191,21 @@
   .travellian__container {
     padding-bottom: 6.25rem;
   }
+
   .travellian__content {
     width: 90%;
   }
+
   .travellian__title {
     font-size: 2.5rem;
-    height: 132.5%; /* 53/40 */
+    height: 132.5%;
+    /* 53/40 */
   }
+
   .travellian__text {
     font-size: 18px;
   }
+
   .travellian__inputs {
     border-radius: 20px;
     flex-direction: column;
@@ -175,12 +215,14 @@
   .travellian__inputs::after {
     display: none;
   }
+
   .input__group {
     padding-top: 2rem;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
+
   .input__item {
     padding: 0 2rem;
   }

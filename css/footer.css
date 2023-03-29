@@ -90,6 +90,7 @@
   background-color: var(--clr-blue-dark);
 }
 
+
 .body-footer__container {
   display: flex;
   justify-content: space-between;
@@ -99,6 +100,15 @@
 .body-footer__logo a {
   display: inline-block;
   margin-bottom: 1rem;
+}
+
+.body-footer__logo {
+  transition: all 0.8s ease 0s;
+  transform: scale(0);
+}
+
+.body-footer__logo.-active {
+  transform: scale(1);
 }
 
 .body-footer__copyright {
