@@ -116,7 +116,7 @@ body {
 
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .swiper-button-prev.-active {
@@ -136,7 +136,7 @@ body {
 
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .swiper-button-next.-active {
